@@ -1,0 +1,191 @@
+/* tag styles */
+html {
+    background-color: beige;
+    font-family: Trebuchet MS, sans-serif;
+}
+
+body {
+    margin: 0px;
+}
+
+h1 {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-size: xx-large;
+    text-align: center;
+    font-style: oblique;
+    color: white;
+    background-color: firebrick;
+}
+
+h5 {
+    font-size: medium;
+}
+
+h6 {
+    font-size: medium;
+    text-align: center;
+    color: gray;
+}
+
+p {
+    font-size: large;
+}
+
+nav {
+    background-image: url('../images/sumie-banner.png');
+    height: 300px;
+}
+
+/* flexbox navbar */
+.flex-nav {
+    padding-top: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+  }
+
+.flex-nav-column {
+    flex: 1;
+}
+
+.flex-nav-right {
+    text-align: right;
+}
+
+/* nav links */
+nav a {
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+    font-size: xx-large;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.5s;
+}
+
+nav a:hover {
+    color: firebrick;
+    text-decoration: underline;
+}
+
+.current-page{
+    text-decoration: underline;
+}
+
+/* Flexboxes */
+
+.flex-content {
+    margin-top: 40px;
+    margin-right: 10px;
+    margin-left: 10px;
+    gap: 30px;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.flex-mail-content {
+    margin-top: 40px;
+    margin-right: 10px;
+    margin-left: 10px;
+    gap: 30px;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.flex-row{
+    margin-top: 30px;
+    margin-bottom: 40px;
+    margin-right: 30px;
+    margin-left: 30px;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.flex-column {
+    width: 50%;
+    flex: 1;
+    justify-items: center;
+}
+
+/* Page Elements */
+
+.splash-img{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    max-width: 70%;
+    height: auto;
+    border: solid 2px rgb(32, 32, 32);
+}
+
+.gallery-img{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
+    height: auto;
+    border: solid 2px rgb(32, 32, 32);
+}
+
+.about-text {
+    max-width: 35%;
+}
+
+.about-img {
+    max-width: 35%;
+    height: auto;
+    border: solid 2px rgb(32, 32, 32);
+}
+
+.mail-container{
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template: "container";
+    place-items: center;
+    place-content: center;
+    overflow: hidden;
+}
+
+.mail-container > * {
+    grid-area: container;
+}
+
+.mail-container > img {
+    max-width: 55%;
+    min-width: 400px;
+}
+
+.mail-container > a {
+    color: white;
+    font-size: x-large;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+.mail-container > a:hover{
+    color: firebrick;
+    text-decoration: underline;
+}
+
+/* Footer */
+.flex-footer {
+    margin-top: 80px;
+    margin-bottom: 30px;
+    gap: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signature-img {
+    max-height: 100px;
+}
