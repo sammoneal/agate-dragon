@@ -1,25 +1,25 @@
-// Get the modal
+//modal elements
 const modal = document.getElementById("galleryModal");
 const captionText = document.getElementById("caption");
-const elements = document.getElementsByClassName("gallery-image")
+const modalImg = document.getElementById("modalImg");
 
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById("myImg");
-var modalImg = document.getElementById("img01");
-img.onclick = function(){
+//insert image and alt text into modal
+function toModal(event){
   modal.style.display = "block";
-  modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
+  modalImg.src = event.target.src;
+  captionText.innerHTML = event.target.alt;
 }
 
+//click targets
+const elements = document.getElementsByClassName("gallery-img")
+
+//add event to all click targets
 for (let i = 0; i < elements.length; i++) {
-    elements[i].addEventListener('click', myFunction, false);
+    elements[i].addEventListener('click', toModal, false);
 }
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on <span> (x), close the modal
+//close the modal
+const span = document.getElementsByClassName("close")[0];
 span.onclick = function() {
   modal.style.display = "none";
 }

@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/modal.css" />
   </head>
   <body>
     <!-- Nav -->
@@ -28,39 +29,46 @@
     <div class="flex-row">
       <div class="flex-column">
         <center>
-          <img src="images/octopus.jpg" alt="" class="gallery-img">
+          <img src="images/octopus.jpg" alt="Octopus" class="gallery-img">
         </center>
         </div>
       <div class="flex-column">
         <center>
-          <img src="images/panda.jpg" alt="" class="gallery-img">
+          <img src="images/panda.jpg" alt="Panda" class="gallery-img">
         </center>
       </div>
     </div>
     <div class="flex-row">
       <div class="flex-column">
         <center>
-          <img src="images/stork.jpg" alt="" class="gallery-img">
+          <img src="images/stork.jpg" alt="Stork" class="gallery-img">
         </center>
       </div>
       <div class="flex-column">
         <center>
-          <img src="images/jellyfish.jpg" alt="" class="gallery-img">
+          <img src="images/jellyfish.jpg" alt="Jellyfish" class="gallery-img">
         </center>
       </div>
     </div>
     <div class="flex-row">
       <div class="flex-column">
         <center>
-          <img src="images/fowl.jpg" alt="" class="gallery-img">
+          <img src="images/fowl.jpg" alt="Rooster" class="gallery-img">
         </center>
       </div>
       <div class="flex-column">
         <center>
-          <img src="images/squid.jpg" alt="" class="gallery-img">
+          <img src="images/squid.jpg" alt="Squid" class="gallery-img">
         </center>
       </div>
     </div>
+    <!-- Modal -->
+    <div id="galleryModal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="modalImg">
+      <div id="caption"></div>
+    </div>
+    <script src="js/modal.js"></script>
     <!-- Footer -->
     <footer>
       <div class="flex-footer">
